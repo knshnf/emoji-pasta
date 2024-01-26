@@ -1,0 +1,6 @@
+@emoji_pasta.Server_HostAddress = http://localhost:5287
+
+GET {{emoji_pasta.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

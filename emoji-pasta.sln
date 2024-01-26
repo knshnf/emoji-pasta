@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emoji-pasta.Server", "emoji-pasta.Server\emoji-pasta.Server.csproj", "{80615309-E9F6-472E-8DA9-08496CCB6060}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "emoji-pasta.client", "emoji-pasta.client\emoji-pasta.client.esproj", "{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80615309-E9F6-472E-8DA9-08496CCB6060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80615309-E9F6-472E-8DA9-08496CCB6060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80615309-E9F6-472E-8DA9-08496CCB6060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80615309-E9F6-472E-8DA9-08496CCB6060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E5C556-F6D5-4BF5-846F-FFBF16BB5A2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C3F78A6-7D17-4C94-9D8B-3F7C42B5A7E7}
+	EndGlobalSection
+EndGlobal

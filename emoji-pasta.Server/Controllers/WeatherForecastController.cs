@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace forum.Server.Controllers
+namespace emoji_pasta.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]

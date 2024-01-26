@@ -1,4 +1,4 @@
-namespace forum.Server
+namespace emoji_pasta.Server
 {
     public class WeatherForecast
     {
