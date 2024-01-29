@@ -27,4 +27,9 @@ app.MapControllers();
 
 app.MapFallbackToFile("/index.html");
 
+app.UseCors(builder => builder
+     .AllowAnyOrigin()
+     .AllowAnyMethod()
+     .AllowAnyHeader());
+
 app.Run();

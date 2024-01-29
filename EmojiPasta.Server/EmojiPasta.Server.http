@@ -1,6 +1,6 @@
 @emoji_pasta.Server_HostAddress = http://localhost:5287
 
-GET {{emoji_pasta.Server_HostAddress}}/emojipasta/
+POST {{emoji_pasta.Server_HostAddress}}/emojipasta/
 Accept: application/json
 
 ###

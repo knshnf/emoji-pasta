@@ -5,9 +5,20 @@ import { useState } from "react";
 function App() {
     const [input, setInput] = useState("");
 
-    async function EmojiPasta() {
-        const response = await fetch('emojipasta');
-        const data = await response.json();
+    const handleSubmit = async () => {
+        const url = `https://localhost:7121/EmojiPasta`;
+
+        const response = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(input),
+            headers: {
+                'Accept': 'application/json; charset=utf-8',
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+        });
+
+        const data = await response;
+        console.log(data);
     }
 
     return (
@@ -16,7 +27,7 @@ function App() {
             <p> Transform &#x1F98B; text  &#x1F48C; into &#x27A1; lively &#x1F917; emoji &#x1FAF6; narratives! &#x2728; </p>
 
             <textarea onChange={event => setInput(event.target.value)}></textarea>
-            <button> Generate Emoji Pasta </button>
+            <button onClick={() => handleSubmit()}> Generate Emoji Pasta </button>
         </>
     );
 }
