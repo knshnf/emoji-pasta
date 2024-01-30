@@ -85,3 +85,12 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+.output {
+    margin-top: 1.4em;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+}
