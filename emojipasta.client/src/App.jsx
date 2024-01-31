@@ -8,7 +8,6 @@ function App() {
 
     const handleSubmit = async () => {
         const url = `https://localhost:7121/EmojiPasta`;
-
         const response = await fetch(url, {
             method: "POST",
             body: JSON.stringify(input),
@@ -17,9 +16,7 @@ function App() {
                 'Content-Type': 'application/json;charset=UTF-8'
             }
         });
-
-        const data = await response;
-        setOutput(data);
+        await response.json().then(body => setOutput(body));
     }
 
     return (
@@ -28,7 +25,7 @@ function App() {
             <p> Transform &#x1F98B; text  &#x1F48C; into &#x27A1; lively &#x1F917; emoji &#x1FAF6; narratives! &#x2728; </p>
             <textarea onChange={event => setInput(event.target.value)}></textarea>
             <button onClick={() => handleSubmit()}> Generate Emoji Pasta </button>
-            <textarea readOnly value={output} className="output"></textarea>
+            <div className="output">{output}</div>
         </>
     );
 }
