@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function App() {
     const [input, setInput] = useState("");
-    const [output, setOutput] = useState("");
+    const [output, setOutput] = useState("test");
 
     const handleSubmit = async () => {
         const url = `https://localhost:7121/EmojiPasta`;
@@ -25,7 +25,7 @@ function App() {
             <p> Transform &#x1F98B; text  &#x1F48C; into &#x27A1; lively &#x1F917; emoji &#x1FAF6; narratives! &#x2728; </p>
             <textarea onChange={event => setInput(event.target.value)}></textarea>
             <button onClick={() => handleSubmit()}> Generate Emoji Pasta </button>
-            <div className="output">{output}</div>
+            <div className="output" onClick={() => { navigator.clipboard.writeText(output) }}>{ output }</div>
         </>
     );
 }
